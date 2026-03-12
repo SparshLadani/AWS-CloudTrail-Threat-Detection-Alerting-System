@@ -15,9 +15,7 @@ Cloud environments generate massive volumes of security logs. Manual monitoring 
 ## ⚙️ Architecture
 
 ```
-CloudTrail → S3 (.json.gz logs) → Lambda (Detection Engine) → DynamoDB (Alert Storage)
-                                                             → SNS (Email Alerts)
-                                                             → API Gateway (REST API /alerts)
+<img width="975" height="593" alt="image" src="https://github.com/user-attachments/assets/7fd2e478-31bf-4996-8602-7d8d11ea8e64" />
 ```
 
 | AWS Service        | Role                                               |
