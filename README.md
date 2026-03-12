@@ -8,7 +8,7 @@ A serverless, event-driven cloud security monitoring pipeline that automatically
 
 ## 📌 Overview
 
-Cloud environments generate massive volumes of security logs. Manual monitoring is slow, error-prone, and leaves organizations exposed. This project automates the full detection-to-alert lifecycle using a fully serverless AWS architecture - detecting threats in **under 10 seconds** with **sub-millisecond query latency**.
+Cloud environments generate massive volumes of security logs. Manual monitoring is slow, error-prone, and leaves organizations exposed. This project automates the full detection-to-alert lifecycle using a fully serverless AWS architecture - detecting threats in **under 50 seconds** with **sub-millisecond query latency**.
 
 ---
 
