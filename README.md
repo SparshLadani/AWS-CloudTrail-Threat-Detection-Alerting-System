@@ -52,7 +52,7 @@ Each alert is assigned a severity level and stored in DynamoDB with full event m
 
 | Metric                    | Value                    |
 |---------------------------|--------------------------|
-| Detection latency         | < 10 seconds             |
+| Detection latency         | < 50 seconds             |
 | Security events processed | 100+                     |
 | DynamoDB query latency    | Sub-millisecond          |
 | Architecture cost model   | Serverless (pay-per-use) |
