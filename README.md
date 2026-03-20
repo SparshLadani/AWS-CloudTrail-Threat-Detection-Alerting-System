@@ -1,19 +1,16 @@
-# 🔐 AWS CloudTrail Threat Detection & Alerting System
-
+# AWS CloudTrail Threat Detection & Alerting System
 A serverless, event-driven cloud security monitoring pipeline that automatically analyzes AWS CloudTrail logs, detects suspicious activity in near real-time, and delivers automated alerts - built to reflect real-world SOC practices.
 
-> 📺 **[Watch Demo Video](https://github.com/user-attachments/assets/f8a922dd-c65a-442c-8863-d9cbd8eb9bf4)** &nbsp;|&nbsp; 🛠️ **AWS, Python, Lambda, DynamoDB, SNS, API Gateway**
+> **[Watch Demo Video](https://github.com/user-attachments/assets/f8a922dd-c65a-442c-8863-d9cbd8eb9bf4)** &nbsp;|&nbsp; **AWS, Python, Lambda, DynamoDB, SNS, API Gateway**
 
 ---
 
-## 📌 Overview
-
+## Overview
 Cloud environments generate massive volumes of security logs. Manual monitoring is slow, error-prone, and leaves organizations exposed. This project automates the full detection-to-alert lifecycle using a fully serverless AWS architecture - detecting threats in **under 50 seconds** with **sub-millisecond query latency**.
 
 ---
 
-## ⚙️ Architecture
-
+## Architecture
 ![Architecture Diagram](https://github.com/user-attachments/assets/7fd2e478-31bf-4996-8602-7d8d11ea8e64)
 
 | AWS Service        | Role                                               |
@@ -27,10 +24,8 @@ Cloud environments generate massive volumes of security logs. Manual monitoring 
 
 ---
 
-## 🚨 Threat Detection Rules
-
+## Threat Detection Rules
 The Lambda detection engine identifies the following high-risk events:
-
 - **MFA Bypass** - Console logins without multi-factor authentication
 - **Unauthorized API Calls** - `AccessDenied` events across AWS services
 - **CloudTrail Tampering** - Attempts to disable or modify audit logging
@@ -39,8 +34,7 @@ Each alert is assigned a severity level and stored in DynamoDB with full event m
 
 ---
 
-## 🔒 Security Practices
-
+## Security Practices
 - **Least-privilege IAM roles** - each service only has the permissions it needs
 - **Encryption at rest** - enabled on both S3 and DynamoDB
 - **HTTPS enforced** - via API Gateway for all REST endpoints
@@ -48,8 +42,7 @@ Each alert is assigned a severity level and stored in DynamoDB with full event m
 
 ---
 
-## 📊 Key Metrics
-
+## Key Metrics
 | Metric                    | Value                    |
 |---------------------------|--------------------------|
 | Detection latency         | < 50 seconds             |
@@ -59,8 +52,7 @@ Each alert is assigned a severity level and stored in DynamoDB with full event m
 
 ---
 
-## 🔮 Future Enhancements
-
+## Future Enhancements
 - [ ] Web-based dashboard for alert visualization
 - [ ] Integration with threat intelligence feeds (e.g. MISP, VirusTotal)
 - [ ] Expanded detection rules (privilege escalation, data exfiltration)
